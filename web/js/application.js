@@ -36,14 +36,7 @@ $(document).ready(function () {
 
 
     native_access = new NativeAccess();
-    if(localStorage.activities ==  undefined){
-        localStorage.activities = JSON.stringify([]);
-        // add more initializer only need one if, when we initialize all keys at here.
-        // e.g.
-        // localStorage.bids = JSON.stringify([]);
-        // localStorage.sign_ups = JSON.stringify([]);
-        //
-    }
+
 
 
 });

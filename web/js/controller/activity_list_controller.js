@@ -5,6 +5,11 @@ function ActivityListController($scope, $navigate) {
     })();
 
     $scope.activities =function(){
-        return JSON.parse(localStorage.activities);
+        if(localStorage.activities == undefined){
+            localStorage.activities = JSON.stringify([]);
+            return [];
+        } else {
+            return JSON.parse(localStorage.activities);
+        }
     }
 }
