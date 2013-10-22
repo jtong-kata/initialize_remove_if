@@ -1,0 +1,21 @@
+<div class='no-footer'>
+  <header>
+    活动列表
+    <div class='header-right'>
+      <a class='btn-style btn-4' href='javascript:void(0);' ng-tap="$navigate.go('/activity_create', 'slide')">
+        <i class=''></i>
+        创建活动
+      </a>
+    </div>
+  </header>
+  <div class='wrapper scrollable'>
+    <ul class='list-style-2'>
+      <li class='' ng-repeat='activity in activities()'><a class='' href='javascript:void(0);' ng-tap="$navigate.go('/apply/{{activity}}', 'slide')">
+          <h3>
+            {{activity}}
+          </h3>
+          <i class='icon-angle-right'></i>
+        </a></li>
+    </ul>
+  </div>
+</div>
